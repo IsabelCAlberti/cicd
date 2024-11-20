@@ -4,9 +4,8 @@ public class CalculadoraService {
         if(b==0){
             throw new ResponseStatusException(
                 HttpStatus.BAD_REQUEST,
-                "Divisão por zero não permitida"
-            )
-        }
+                "Divisão por zero não permitida");
+            }
            return a/b;
     }
 }
